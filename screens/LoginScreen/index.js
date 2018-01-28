@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {
+    Image,
     Platform,
     StyleSheet,
-    Text,
+    Text, TextInput,
     View
 } from 'react-native';
-import HeaderCustom from "../../components/Header";
-
+import {Icon} from "react-native-elements";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -22,20 +22,60 @@ export default class App extends Component<{}> {
 
     render() {
         return (
-            <View>
-                <HeaderCustom title={"hihi"}/>
-                <View style={styles.container}>
-                    <Text style={styles.welcome}>
-                        Welcome to React Native!
-                    </Text>
-                    <Text style={styles.instructions}>
-                        To get started, edit App.js
-                    </Text>
-                    <Text style={styles.instructions}>
-                        {instructions}
-                    </Text>
+
+
+            <View style={styles.container}>
+                <Image source={require('../../images/bglogin.jpg')}
+                       style={{width: '100%', height: '100%', position: 'absolute'}} opacity={0.8}/>
+                <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
+                    <Text style={{fontSize: 26, fontFamily: "Lobster-Regular", color: 'white'}}>abdas</Text>
+                </View>
+                <View style={{flex: 4, alignItems: 'center', opacity: 0.8}}>
+                    <View style={{
+                        backgroundColor: 'rgba(52, 52, 52, 0.3)',
+                        alignItems: 'center',
+                        borderRadius: 5,
+                        borderWidth: 1,
+                        height: 46,
+                        width: '80%',
+                        flexDirection: 'row',
+                        borderBottomWidth: 0.5,
+                        borderBottomColor: 'white',
+                        marginTop: 8,
+                        marginBottom: 2
+                    }}>
+                        <Icon
+                            name='sc-telegram'
+                            type='evilicon'
+                            color='#517fa4'
+                        />
+                        <TextInput style={{fontSize: 18, color: 'white', height: 46, width: '80%', paddingLeft: 4}}
+                                   placeholder={"Tên đăng nhập"} placeholderTextColor="white"/>
+                    </View>
+                    <View style={{
+                        backgroundColor: 'rgba(52, 52, 52, 0.3)',
+                        alignItems: 'center',
+                        borderRadius: 5,
+                        borderWidth: 1,
+                        height: 46,
+                        width: '80%',
+                        flexDirection: 'row',
+                        borderTopWidth: 0
+                    }}>
+                        <Icon
+                            name='sc-telegram'
+                            type='evilicon'
+                            color='#517fa4'
+                        />
+                        <TextInput style={{fontSize: 18, color: 'white', height: 46, width: '80%', paddingLeft: 4}}
+                                   placeholder={"Tên đăng nhập"} placeholderTextColor="white"/>
+                    </View>
+                </View>
+                <View style={{flex: 1, margin: 10}}>
+                    <Text>abdas</Text>
                 </View>
             </View>
+
         );
     }
 }
@@ -43,9 +83,7 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+
     },
     welcome: {
         fontSize: 20,

@@ -24,6 +24,7 @@ export default class HeaderCustom extends React.Component {
                                           style={{
                                               alignSelf: 'center',
                                               backgroundColor: 'transparent',
+                                              marginLeft: 4
                                           }}>
                             <Icon
                                 style={{
