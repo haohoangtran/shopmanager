@@ -22,9 +22,9 @@ export default class HeaderCustom extends React.Component {
                             if (this.props.leftClick) this.props.leftClick()
                         }}
                                           style={{
-                                              alignSelf: 'center',
+                                              alignSelf: 'center', justifyContent: 'center', marginTop: 8,
                                               backgroundColor: 'transparent',
-                                              marginLeft: 4
+                                              marginLeft: 8
                                           }}>
                             <Icon
                                 style={{
@@ -43,6 +43,7 @@ export default class HeaderCustom extends React.Component {
                                      backgroundColor: 'transparent',
                                      fontSize: 18,
                                      alignSelf: 'center',
+                                     marginTop: 8,
                                      color: 'white'
                                  }}>{this.props.title}</Animatable.Text>
 

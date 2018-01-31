@@ -50,6 +50,14 @@
 		E3DE87A672D240188BE30B70 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DC197325D8144019F838341 /* Zocial.ttf */; };
 		035D1E9C0DC34B42A1EC010E /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A3FEA8F7C744BD9EA2ABED /* libBVLinearGradient.a */; };
 		07F255B9F4D84B5BB102E83C /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBC892FEE944424B81057D81 /* Lobster-Regular.ttf */; };
+		ABCD6DB1F9914B1195E9F190 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F2C71ED058C493CA5034130 /* OpenSans-Light.ttf */; };
+		5C431F868AE2444296E35A61 /* Arapey-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF0E4D153BD48DD8BEF353F /* Arapey-Regular.ttf */; };
+		4CD0C79A5D4449C3A209B6E9 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07037809C794ACF84E6AC83 /* Comfortaa-Light.ttf */; };
+		CA963461619C4C4C8D8AAC98 /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADF9DD3A72FE468EA84EF197 /* Lora-Regular.ttf */; };
+		DC34D7F08CD843B294022397 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAFF11528A5B4DBFBF55445D /* MavenPro-Regular.ttf */; };
+		B1AC3DF2EA1549F494B970CA /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */; };
+		DA410813810F46458462C4A3 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */; };
+		E32E386135CC4891B58D0B35 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +323,14 @@
 		A2EBCB7CE1244F9B984DEADE /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		A5A3FEA8F7C744BD9EA2ABED /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		EBC892FEE944424B81057D81 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; name = "Lobster-Regular.ttf"; path = "../assets/fonts/Lobster-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9F2C71ED058C493CA5034130 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; name = "OpenSans-Light.ttf"; path = "../assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CEF0E4D153BD48DD8BEF353F /* Arapey-Regular.ttf */ = {isa = PBXFileReference; name = "Arapey-Regular.ttf"; path = "../assets/fonts/Arapey-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A07037809C794ACF84E6AC83 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; name = "Comfortaa-Light.ttf"; path = "../assets/fonts/Comfortaa-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ADF9DD3A72FE468EA84EF197 /* Lora-Regular.ttf */ = {isa = PBXFileReference; name = "Lora-Regular.ttf"; path = "../assets/fonts/Lora-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAFF11528A5B4DBFBF55445D /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; name = "MavenPro-Regular.ttf"; path = "../assets/fonts/MavenPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; name = "OpenSansCondensed-Light.ttf"; path = "../assets/fonts/OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-Regular.ttf"; path = "../assets/fonts/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -587,6 +603,14 @@
 				C2973086E7D243D096F892C0 /* SimpleLineIcons.ttf */,
 				6DC197325D8144019F838341 /* Zocial.ttf */,
 				EBC892FEE944424B81057D81 /* Lobster-Regular.ttf */,
+				9F2C71ED058C493CA5034130 /* OpenSans-Light.ttf */,
+				CEF0E4D153BD48DD8BEF353F /* Arapey-Regular.ttf */,
+				A07037809C794ACF84E6AC83 /* Comfortaa-Light.ttf */,
+				ADF9DD3A72FE468EA84EF197 /* Lora-Regular.ttf */,
+				DAFF11528A5B4DBFBF55445D /* MavenPro-Regular.ttf */,
+				EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */,
+				C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */,
+				ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -994,6 +1018,14 @@
 				A2A30B65631F47539C736B1E /* SimpleLineIcons.ttf in Resources */,
 				E3DE87A672D240188BE30B70 /* Zocial.ttf in Resources */,
 				07F255B9F4D84B5BB102E83C /* Lobster-Regular.ttf in Resources */,
+				ABCD6DB1F9914B1195E9F190 /* OpenSans-Light.ttf in Resources */,
+				5C431F868AE2444296E35A61 /* Arapey-Regular.ttf in Resources */,
+				4CD0C79A5D4449C3A209B6E9 /* Comfortaa-Light.ttf in Resources */,
+				CA963461619C4C4C8D8AAC98 /* Lora-Regular.ttf in Resources */,
+				DC34D7F08CD843B294022397 /* MavenPro-Regular.ttf in Resources */,
+				B1AC3DF2EA1549F494B970CA /* OpenSansCondensed-Light.ttf in Resources */,
+				DA410813810F46458462C4A3 /* PlayfairDisplay-Regular.ttf in Resources */,
+				E32E386135CC4891B58D0B35 /* Raleway-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

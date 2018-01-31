@@ -3,10 +3,14 @@ import {
     Image,
     Platform,
     StyleSheet,
-    Text, TextInput,
+    Text, TextInput, TouchableOpacity,
     View
 } from 'react-native';
-import {Icon} from "react-native-elements";
+import {FormLabel, FormInput, FormValidationMessage, CheckBox} from 'react-native-elements'
+import {Button, Icon} from "react-native-elements";
+import shadow from '../../configs/shadow'
+import LinearGradient from 'react-native-linear-gradient';
+import {Header} from "react-navigation";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -15,67 +19,89 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menuaââsa',
 });
 
-export default class App extends Component<{}> {
+export default class LoginScreen extends Component<{}> {
     static navigationOptions = {
         header: null
     };
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: "",
+            password: "",
+            checked: false
+        }
+    }
+
+    startLogin() {
+        const {navigate} = this.props.navigation;
+        navigate('Home');
+    }
+
     render() {
         return (
-
-
             <View style={styles.container}>
-                <Image source={require('../../images/bglogin.jpg')}
-                       style={{width: '100%', height: '100%', position: 'absolute'}} opacity={0.8}/>
-                <View style={{flex: 2, alignItems: 'center', justifyContent: 'center'}}>
-                    <Text style={{fontSize: 26, fontFamily: "Lobster-Regular", color: 'white'}}>abdas</Text>
-                </View>
-                <View style={{flex: 4, alignItems: 'center', opacity: 0.8}}>
-                    <View style={{
-                        backgroundColor: 'rgba(52, 52, 52, 0.3)',
-                        alignItems: 'center',
-                        borderRadius: 5,
-                        borderWidth: 1,
-                        height: 46,
-                        width: '80%',
-                        flexDirection: 'row',
-                        borderBottomWidth: 0.5,
-                        borderBottomColor: 'white',
-                        marginTop: 8,
-                        marginBottom: 2
-                    }}>
-                        <Icon
-                            name='sc-telegram'
-                            type='evilicon'
-                            color='#517fa4'
-                        />
-                        <TextInput style={{fontSize: 18, color: 'white', height: 46, width: '80%', paddingLeft: 4}}
-                                   placeholder={"Tên đăng nhập"} placeholderTextColor="white"/>
-                    </View>
-                    <View style={{
-                        backgroundColor: 'rgba(52, 52, 52, 0.3)',
-                        alignItems: 'center',
-                        borderRadius: 5,
-                        borderWidth: 1,
-                        height: 46,
-                        width: '80%',
-                        flexDirection: 'row',
-                        borderTopWidth: 0
-                    }}>
-                        <Icon
-                            name='sc-telegram'
-                            type='evilicon'
-                            color='#517fa4'
-                        />
-                        <TextInput style={{fontSize: 18, color: 'white', height: 46, width: '80%', paddingLeft: 4}}
-                                   placeholder={"Tên đăng nhập"} placeholderTextColor="white"/>
-                    </View>
-                </View>
-                <View style={{flex: 1, margin: 10}}>
-                    <Text>abdas</Text>
-                </View>
-            </View>
+                <LinearGradient colors={['#1b60ad', '#3dc4ea']} style={{flex: 4.5}}>
 
+                </LinearGradient>
+                <View style={{flex: 6, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center'}}>
+
+                </View>
+                <View style={{
+                    position: 'absolute',
+                    backgroundColor: 'white',
+                    top: '35%',
+                    left: '5%',
+                    right: '5%',
+                    bottom: '15%', ...shadow,
+                    padding: 8, justifyContent: 'center'
+                }}>
+                    <Text style={{
+                        fontSize: 24,
+                        marginTop: 8,
+                        alignSelf: 'center',
+                        fontFamily: 'Arapey-Regular'
+                    }}>LOGIN</Text>
+                    <View style={{flex: 2, paddingLeft: 8}}>
+                        <FormLabel labelStyle={{color: '#3e87d3'}}>Username</FormLabel>
+                        <FormInput onChangeText={(username) => {
+                            this.setState({username});
+                        }}/>
+                        <FormLabel labelStyle={{color: '#3e87d3'}}>Password</FormLabel>
+                        <FormInput onChangeText={(password) => {
+                            this.setState({password});
+                        }}/>
+                        <CheckBox
+
+                            textStyle={{color: 'gray', fontFamily: 'System', backgroundColor: 'white'}}
+                            title='Ghi nhớ đăng nhập'
+                            checked={this.state.checked}
+                            onPress={() => this.setState({checked: !this.state.checked})}
+                            containerStyle={{backgroundColor: 'transparent', borderColor: 'white'}}
+                        />
+                    </View>
+                </View>
+                <TouchableOpacity
+                    activeOpacity={0.6}
+                    underlayColor="transparent"
+                    onPress={() => {
+                        this.startLogin()
+                    }}
+                    style={{
+                        ...shadow,
+                        height: 48,
+                        position: 'absolute',
+                        bottom: '10%',
+                        width: '70%',
+                        borderRadius: 24,
+                        alignSelf: 'center',
+                        backgroundColor: '#611edc',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}>
+                    <Text style={{fontSize: 18, color: 'white',}}>Login</Text>
+                </TouchableOpacity>
+            </View>
         );
     }
 }
@@ -83,7 +109,7 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
+        justifyContent: 'center'
     },
     welcome: {
         fontSize: 20,
@@ -95,4 +121,13 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 5,
     },
+    topElement: {
+        paddingTop: Platform.OS === 'ios' ? 16 : 0,
+        paddingVertical: 16,
+        elevation: 15,
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        height: Header.height,
+        backgroundColor: 'transparent'
+    }
 });

@@ -1,9 +1,14 @@
 import { StackNavigator } from 'react-navigation';
-import HomeScreen from './screens/LoginScreen'
+import LoginScreen from './screens/LoginScreen'
+import HomeScreen from "./screens/HomeScreen";
 const RootNavigator = StackNavigator({
-    Home: {
-        screen: HomeScreen,
+    Login: {
+        screen: LoginScreen,
     },
+    Home: {
+        screen: HomeScreen
+    }
+
 });
 
 export default RootNavigator;
