@@ -74,7 +74,7 @@ export default class LoginScreen extends Component<{}> {
                         <CheckBox
 
                             textStyle={{color: 'gray', fontFamily: 'System', backgroundColor: 'white'}}
-                            title='Ghi nhớ đăng nhập'
+                            title='Remember me'
                             checked={this.state.checked}
                             onPress={() => this.setState({checked: !this.state.checked})}
                             containerStyle={{backgroundColor: 'transparent', borderColor: 'white'}}

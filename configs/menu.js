@@ -11,23 +11,23 @@ export default [
     },
     {
         iconName: 'files-o',
-        screenName: 'ChooseTypeOrder',
+        screenName: 'Order',
         title: 'ĐƠN HÀNG'
     },
     {
         iconName: 'id-card',
-        screenName: 'ChooseTypeCustomer',
+        screenName: 'Customer',
         title: 'KHÁCH HÀNG'
     },
     {
         iconName: 'space-shuttle',
-        screenName: 'ChooseTypeTravel',
-        title: 'VIẾNG THĂM'
+        screenName: 'Product',
+        title: 'Mặt hàng'
     },
     {
         iconName: 'bar-chart',
         screenName: 'ChooseTypeChart',
-        title: 'BIỂU ĐỒ'
+        title: 'Doanh thu'
     },
     {
         iconName: 'clipboard',
@@ -41,7 +41,7 @@ export default [
     },
     {
         iconName: 'comments-o',
-        screenName: 'Message',
+        screenName: 'Chat',
         title: 'TIN NHẮN'
     }
 

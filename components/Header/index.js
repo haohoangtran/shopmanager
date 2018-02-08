@@ -22,16 +22,15 @@ export default class HeaderCustom extends React.Component {
                             if (this.props.leftClick) this.props.leftClick()
                         }}
                                           style={{
-                                              alignSelf: 'center', justifyContent: 'center', marginTop: 8,
+                                              alignSelf: 'center', justifyContent: 'center',
                                               backgroundColor: 'transparent',
-                                              marginLeft: 8
+                                              padding:8
                                           }}>
                             <Icon
                                 style={{
                                     alignSelf: 'center',
                                     backgroundColor: 'transparent',
-                                    paddingTop: 4,
-                                    paddingHorizontal: 8,
+
                                 }}
                                 size={35}
                                 color={this.props.iconColor} name={this.props.iconName} type={this.props.iconType}
@@ -68,13 +67,11 @@ HeaderCustom.defaultProps = {
 };
 const styles = StyleSheet.create({
     titleStyle: {
-        paddingTop: Platform.OS === 'ios' ? 16 : 0,
-        paddingVertical: 16,
         elevation: 15,
         justifyContent: 'space-between',
         flexDirection: 'row',
         height: Header.height,
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent', paddingLeft: 12
     },
     headerStyle: {
         elevation: 15, height: this.height / 7

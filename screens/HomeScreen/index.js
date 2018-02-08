@@ -44,7 +44,7 @@ export default class HomeScreen extends React.Component {
                             }}>
                                 <Icon color={"white"} name={item.iconName} type={"font-awesome"} size={24}/>
                             </View>
-                            <Text numberOfLines={1} style={{alignSelf: 'center'}}>{item.title}</Text>
+                            <Text numberOfLines={1} style={{alignSelf: 'center'}}>{item.title.toUpperCase()}</Text>
                         </TouchableOpacity>
                     }
                 />
