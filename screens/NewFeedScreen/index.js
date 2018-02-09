@@ -11,7 +11,8 @@ import HeaderCustom from "../../components/Header";
 import {Avatar, Icon} from "react-native-elements";
 import shadowProps from "../../configs/shadow";
 import moment from 'moment'
-import 'moment/locale/vi'  // without this line it didn't work
+import 'moment/locale/vi'
+import {GiftedAvatar} from "react-native-gifted-chat";  // without this line it didn't work
 moment.locale('vi')
 export default class NewFeedScreen extends Component {
     static navigationOptions = {
@@ -29,37 +30,37 @@ export default class NewFeedScreen extends Component {
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Bui Quang Minh",
                         content: "Đăng xuất",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hung Quang Huy",
                         content: "Xuất kho",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hảo Hoàng",
                         content: "Nhập kho",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hoang Tran Ha",
                         content: "Đăng nhập",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hoang Tran ",
                         content: "Đăng xuất",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hoang Tra",
                         content: "Xuất kho",
                         date: new Date(),
                     },
                     {
-                        name: "Hoang Tran Hao",
+                        name: "Hoang Tra",
                         content: "Nhập kho",
                         date: new Date(),
                     }
@@ -88,14 +89,7 @@ export default class NewFeedScreen extends Component {
                             onPress={() => {
 
                             }}>
-                            <Avatar
-                                iconStyle={{backgroundColor:'white'}}
-                                medium
-                                rounded
-                                source={{uri: "https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg"}}
-                                onPress={() => console.log("Works!")}
-                                activeOpacity={0.7}
-                            />
+                            <GiftedAvatar user={{name: item.name}}/>
                             <View style={{flex: 1, height: Dimensions.get("window").height / 8-5, padding: 8,backgroundColor:'white'}}>
                                 <Text numberOfLines={1}
                                       style={{fontSize:16,fontWeight:'600'}}>{item.name}</Text>

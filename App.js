@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation';
+import {StackNavigator} from 'react-navigation';
 import LoginScreen from './screens/LoginScreen'
 import HomeScreen from "./screens/HomeScreen";
 import NewFeedScreen from "./screens/NewFeedScreen";
@@ -6,6 +6,8 @@ import ChatScreen from "./screens/ChatScreen";
 import OrderScreen from "./screens/OrderScreen";
 import CustomerScreen from "./screens/CustomerScreen";
 import ProductScreen from "./screens/ProductScreen";
+import AddNewCustomer from "./screens/AddNewCustomer";
+
 const RootNavigator = StackNavigator({
     Login: {
         screen: LoginScreen,
@@ -27,7 +29,10 @@ const RootNavigator = StackNavigator({
     },
     Product: {
         screen: ProductScreen
-    }
+    },
+    AddNewCustomer: {
+        screen: AddNewCustomer
+    },
 
 });
 
