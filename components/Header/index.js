@@ -18,14 +18,15 @@ export default class HeaderCustom extends React.Component {
             <LinearGradient colors={['#1b60ad', '#3dc4ea']} style={styles.titleStyle}>
                 {
                     this.props.leftChildren ? this.props.leftChildren :
-                        <TouchableOpacity onPress={() => {
-                            if (this.props.leftClick) this.props.leftClick()
-                        }}
-                                          style={{
-                                              alignSelf: 'center', justifyContent: 'center',
-                                              backgroundColor: 'transparent',
-                                              padding:8
-                                          }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                if (this.props.leftClick) this.props.leftClick()
+                            }}
+                            style={{
+                                alignSelf: 'center', justifyContent: 'center',
+                                backgroundColor: 'transparent',
+                                paddingVertical: 8,paddingHorizontal:16
+                            }}>
                             <Icon
                                 style={{
                                     alignSelf: 'center',
@@ -42,7 +43,6 @@ export default class HeaderCustom extends React.Component {
                                      backgroundColor: 'transparent',
                                      fontSize: 18,
                                      alignSelf: 'center',
-                                     marginTop: 8,
                                      color: 'white'
                                  }}>{this.props.title}</Animatable.Text>
 
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         flexDirection: 'row',
         height: Header.height,
-        backgroundColor: 'transparent', paddingLeft: 12
+        backgroundColor: 'transparent'
     },
     headerStyle: {
         elevation: 15, height: this.height / 7

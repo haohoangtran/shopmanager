@@ -64,11 +64,11 @@ export default class LoginScreen extends Component<{}> {
                     }}>LOGIN</Text>
                     <View style={{flex: 2, paddingLeft: 8}}>
                         <FormLabel labelStyle={{color: '#3e87d3'}}>Username</FormLabel>
-                        <FormInput onChangeText={(username) => {
+                        <FormInput underlineColorAndroid={"gray"} onChangeText={(username) => {
                             this.setState({username});
                         }}/>
                         <FormLabel labelStyle={{color: '#3e87d3'}}>Password</FormLabel>
-                        <FormInput onChangeText={(password) => {
+                        <FormInput  underlineColorAndroid={"gray"} onChangeText={(password) => {
                             this.setState({password});
                         }}/>
                         <CheckBox
