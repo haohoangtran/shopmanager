@@ -60,7 +60,6 @@ export default class AddNewCustomer extends React.Component {
     }
 
     render() {
-
         return (
             <View>
                 <HeaderCustom title={"Them khach hang"} leftClick={() => {

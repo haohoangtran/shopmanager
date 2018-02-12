@@ -1,0 +1,7 @@
+const TOKEN = "TOKEN",
+    USER_NAME = "USER_NAME",
+    PASSWORD = "PASSWORD"
+
+export {
+    TOKEN, USER_NAME, PASSWORD
+}

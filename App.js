@@ -7,6 +7,7 @@ import OrderScreen from "./screens/OrderScreen";
 import CustomerScreen from "./screens/CustomerScreen";
 import ProductScreen from "./screens/ProductScreen";
 import AddNewCustomer from "./screens/AddNewCustomer";
+import XuatKhoScreen from "./screens/XuatKhoScreen";
 
 const RootNavigator = StackNavigator({
     Login: {
@@ -32,6 +33,9 @@ const RootNavigator = StackNavigator({
     },
     AddNewCustomer: {
         screen: AddNewCustomer
+    },
+    XuatKho: {
+        screen: XuatKhoScreen
     },
 
 });

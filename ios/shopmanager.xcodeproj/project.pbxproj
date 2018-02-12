@@ -58,6 +58,9 @@
 		B1AC3DF2EA1549F494B970CA /* OpenSansCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */; };
 		DA410813810F46458462C4A3 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */; };
 		E32E386135CC4891B58D0B35 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */; };
+		BC00937FC793441E9D71EA52 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EA5E53AE26442888FC028CA /* Nunito-Black.ttf */; };
+		5B3E313875254F8DBDFD4BC9 /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 343C5B963998463ABFE31B38 /* Nunito-Light.ttf */; };
+		9CB54BD8241442E7B086043A /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AD14893B16E4C4BB6313517 /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +334,9 @@
 		EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */ = {isa = PBXFileReference; name = "OpenSansCondensed-Light.ttf"; path = "../assets/fonts/OpenSansCondensed-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "PlayfairDisplay-Regular.ttf"; path = "../assets/fonts/PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1EA5E53AE26442888FC028CA /* Nunito-Black.ttf */ = {isa = PBXFileReference; name = "Nunito-Black.ttf"; path = "../assets/fonts/Nunito-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		343C5B963998463ABFE31B38 /* Nunito-Light.ttf */ = {isa = PBXFileReference; name = "Nunito-Light.ttf"; path = "../assets/fonts/Nunito-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9AD14893B16E4C4BB6313517 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; name = "Nunito-Regular.ttf"; path = "../assets/fonts/Nunito-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -611,6 +617,9 @@
 				EFB4DB62339846518EC612AB /* OpenSansCondensed-Light.ttf */,
 				C841CA52A9E2456B9D4F3C79 /* PlayfairDisplay-Regular.ttf */,
 				ADE2EF0A0C11438EA7C900C3 /* Raleway-Regular.ttf */,
+				1EA5E53AE26442888FC028CA /* Nunito-Black.ttf */,
+				343C5B963998463ABFE31B38 /* Nunito-Light.ttf */,
+				9AD14893B16E4C4BB6313517 /* Nunito-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1026,6 +1035,9 @@
 				B1AC3DF2EA1549F494B970CA /* OpenSansCondensed-Light.ttf in Resources */,
 				DA410813810F46458462C4A3 /* PlayfairDisplay-Regular.ttf in Resources */,
 				E32E386135CC4891B58D0B35 /* Raleway-Regular.ttf in Resources */,
+				BC00937FC793441E9D71EA52 /* Nunito-Black.ttf in Resources */,
+				5B3E313875254F8DBDFD4BC9 /* Nunito-Light.ttf in Resources */,
+				9CB54BD8241442E7B086043A /* Nunito-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

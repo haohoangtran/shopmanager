@@ -6,8 +6,8 @@ export default [
     },
     {
         iconName: 'users',
-        screenName: 'ChooseTypeListNV',
-        title: 'NHÂN VIÊN'
+        screenName: 'XuatKho',
+        title: 'xuất kho'
     },
     {
         iconName: 'files-o',

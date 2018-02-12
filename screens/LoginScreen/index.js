@@ -11,6 +11,10 @@ import {Button, Icon} from "react-native-elements";
 import shadow from '../../configs/shadow'
 import LinearGradient from 'react-native-linear-gradient';
 import {Header} from "react-navigation";
+import {getFetch, showToast} from "../../utils";
+import {getPrefData, savePrefData} from "../../utils/sharePref";
+import {PASSWORD, TOKEN, USER_NAME} from "../../configs/const";
+import DataConfig from "../../configs/data";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -33,9 +37,36 @@ export default class LoginScreen extends Component<{}> {
         }
     }
 
+    async componentDidMount() {
+        let username = await getPrefData(USER_NAME) || "";
+        let password = await getPrefData(PASSWORD) || "";
+        this.setState({username, password, checked: Boolean(username)})
+    }
+
     startLogin() {
-        const {navigate} = this.props.navigation;
-        navigate('Home');
+        getFetch("login", "POST", {username: this.state.username, password: this.state.password})
+            .then((response) => response.json())
+            .then((responseJson) => {
+                if (responseJson.token) {
+                    savePrefData(TOKEN, responseJson.token);
+                    if (this.state.checked) {
+                        savePrefData(USER_NAME, this.state.username);
+                        savePrefData(PASSWORD, this.state.password);
+                    } else {
+                        savePrefData(USER_NAME, "");
+                        savePrefData(PASSWORD, "");
+                    }
+                    DataConfig.token = responseJson.token;
+                    const {navigate} = this.props.navigation;
+                    navigate('Home');
+                } else {
+                    showToast("Tên tài khoản hoặc mật khẩu không đúng!")
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+
     }
 
     render() {
@@ -64,15 +95,16 @@ export default class LoginScreen extends Component<{}> {
                     }}>LOGIN</Text>
                     <View style={{flex: 2, paddingLeft: 8}}>
                         <FormLabel labelStyle={{color: '#3e87d3'}}>Username</FormLabel>
-                        <FormInput underlineColorAndroid={"gray"} onChangeText={(username) => {
-                            this.setState({username});
-                        }}/>
+                        <FormInput value={this.state.username} underlineColorAndroid={"gray"}
+                                   onChangeText={(username) => {
+                                       this.setState({username});
+                                   }}/>
                         <FormLabel labelStyle={{color: '#3e87d3'}}>Password</FormLabel>
-                        <FormInput  underlineColorAndroid={"gray"} onChangeText={(password) => {
-                            this.setState({password});
-                        }}/>
+                        <FormInput value={this.state.password} secureTextEntry={true} underlineColorAndroid={"gray"}
+                                   onChangeText={(password) => {
+                                       this.setState({password});
+                                   }}/>
                         <CheckBox
-
                             textStyle={{color: 'gray', fontFamily: 'System', backgroundColor: 'white'}}
                             title='Remember me'
                             checked={this.state.checked}

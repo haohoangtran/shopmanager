@@ -73,6 +73,9 @@
 		<string>OpenSansCondensed-Light.ttf</string>
 		<string>PlayfairDisplay-Regular.ttf</string>
 		<string>Raleway-Regular.ttf</string>
+		<string>Nunito-Black.ttf</string>
+		<string>Nunito-Light.ttf</string>
+		<string>Nunito-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
